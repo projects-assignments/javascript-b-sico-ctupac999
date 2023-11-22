@@ -1,4 +1,4 @@
-import {describe, it} from 'node:test';
+import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 
 
@@ -9,9 +9,9 @@ describe("Funciones en JavaScript", () => {
         let name = "Rosa";
 
         // Escribe aquí tu funcion "saludar"
+        const saludar = () => { }
 
-
-        assert.strictEqual(saludar(name),"Hola, Rosa");
+        assert.strictEqual(saludar(name), "Hola, Rosa");
     })
 
 
@@ -22,7 +22,7 @@ describe("Funciones en JavaScript", () => {
         // Escribe aquí tu función "suma"
 
 
-        assert.strictEqual(suma(num1, num2),27);
+        assert.strictEqual(suma(num1, num2), 27);
     })
 
 
@@ -44,16 +44,16 @@ describe("Funciones en JavaScript", () => {
     // Recuerda quitar la puntuación de comentario (/* ... */) para que este código a continuación sea legible, e inclúyelo dentro de tu test.
 
 
-     /*    let userName = "Ariana28";
-        let userAge = 38;
-        let userEmail = "ariana_28@gmail.com";
-        let userLocation = "Barcelona"
-        let userIsRegistered = true;
-        let password = "p4s$w0rDs3guR0";
+    /*    let userName = "Ariana28";
+       let userAge = 38;
+       let userEmail = "ariana_28@gmail.com";
+       let userLocation = "Barcelona"
+       let userIsRegistered = true;
+       let password = "p4s$w0rDs3guR0";
 
-        function userAuth(userName, userEmail, password) {
-            return "Welcome ${userName}, your email is ${userEmail} and your password is ${password}."
-        } */
+       function userAuth(userName, userEmail, password) {
+           return "Welcome ${userName}, your email is ${userEmail} and your password is ${password}."
+       } */
 
 
-    })
+})
