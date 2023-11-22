@@ -52,26 +52,25 @@ describe("Condicionales en JavaScript", () => {
 })
 
 
-// describe("Escribe tus propios tests", () => {
-//     it("Si la persona es de Reino Unido (UK), le saludamos en inglés, y si no, le saludamos en castellano", () => {
-//         let country = "UK";
-//         let greeting;
+describe("Escribe tus propios tests", () => {
+    it("Si la persona es de Reino Unido (UK), le saludamos en inglés, y si no, le saludamos en castellano", () => {
+        let country = "UK";
+        let greeting;
 
-//         // Escribe aquí tu condicional contemplando las 2 casuísticas. En este caso, el saludo debe ser "¡Hola!" o bien "Hello!".
+        // Escribe aquí tu condicional contemplando las 2 casuísticas. En este caso, el saludo debe ser "¡Hola!" o bien "Hello!".
+        if (country == "UK") { greeting = "¡Hello!" } else { greeting = "¡Hola!" };
+        assert.strictEqual(greeting).toBe("Hello!");
+    })
+})
 
+it("Para saludar a alguien hay que saber la hora. Si es antes de las 12, le decimos 'Buenos días', si es después de las 12 pero antes de las 20, le decimos 'Buenas tardes', y si es después de las 20, le decimos 'Buenas noches'", () => {
+    let hour = 19;
+    let saludo;
 
-//         assert.strictEqual(greeting).toBe("Hello!");
-//     })
+    // Escribe aquí tu condicional contemplando las 3 casuísticas
+    if (hour <= 12) { saludo = "Buenos días" }
+    else if (hour <= 20 & hour < 12) { saludo = "Buenas tardes" }
+    else (saludo = "Buenas noches")
 
-
-//     it("Para saludar a alguien hay que saber la hora. Si es antes de las 12, le decimos 'Buenos días', si es después de las 12 pero antes de las 20, le decimos 'Buenas tardes', y si es después de las 20, le decimos 'Buenas noches'", () => {
-//         let hour = 19;
-//         let saludo;
-
-//         // Escribe aquí tu condicional contemplando las 3 casuísticas
-
-
-//         assert.strictEqual(saludo,"Buenas tardes");
-//     })
-
-// })
+    assert.strictEqual(saludo, "Buenas tardes");
+})
